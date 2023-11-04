@@ -1,0 +1,84 @@
+body {
+    /* Sets default colours that can be referenced */
+    --color-primary: #009579;
+    --color-primary-dark: #007f6a;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --color-clear: #ffffff;
+    --border-radius: 4px;
+
+    /* vertically and horizontally center our container*/
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-image: url(background-image.jpg); /* issues making image public in separate folder */
+    background-size: cover;
+    /* background: var(--color-primary) */
+
+}
+
+.\.container {
+    width: 400px;
+    max-width: 400px;
+
+    /* margin = spacing around element's border, padding = spacing between element's border and content */
+    margin: 1rem;
+    padding: 2rem;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.\.container
+.form__input
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif; /* STUPID ASS FONT DOESNT WORK */
+}
+.form > *:first-child { /* Adjusts spacing of form*/
+    margin-top: 0;
+}
+.form > *:last-child { /* Adjusts spacing of form*/
+    margin-bottom: 0;
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message--success {
+    color: var(--color-success);
+}
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form__input:focus { /* when the input box is being used */
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+

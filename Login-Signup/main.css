@@ -35,7 +35,7 @@ body {
     font: 500 1rem 'Quicksand', sans-serif; /* font applied to entire container */
 }
 
-.form__hidden {
+.form--hidden {
     display: none;
 }
 

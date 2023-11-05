@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //
     document.querySelectorAll(".form__input").forEach(inputElement => {
-        console.log(inputElement);
         inputElement.addEventListener("blur", e => {
             if(e.target.id === "signUpUsername" && e.target.value.length > 0 && e.target.value.length < 3){
                 setInputError(inputElement, "Username must be at least 3 characters in length")

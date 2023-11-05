@@ -3,16 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Range Slider</title>
-
-    <link rel="stylesheet" href="loginPage.css">
-
+    <title>Emotion Slider</title>
+    <link rel="stylesheet" href="emotionSlider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <input type="range" class="slider" id="rangeSlider" min="1", max="100" value="50">
+
+    <div>
+        <picture class="image__hidden mood__images" id="image1">
+            <img src="/res/happy2.png" alt="Super Awesome" width = 200px>
+            <h2>Super Awesome</h2>
+        </picture>
+        <picture class="image__hidden mood__images" id="image2">
+            <img src="/res/happy1.png" alt="Pretty Good" width = 200px>
+            <h2>Pretty Good</h2>
+        </picture>
+        <picture class="image__hidden mood__images" id="image5">
+            <img src="/res/bad2.png" alt="Really Terrible" width = 200px>
+            <h2 >Really Terrible</h2>
+        </picture>
+        <picture class="image__hidden mood__images" id="image4">
+            <img src="/res/bad1.png" alt="Somewhat Bad" width = 200px>
+            <h2>Somewhat Bad</h2>
+        </picture>
+        <picture class="image3 mood__images" id="image3">
+            <img src="/res/medium.png" alt="Completely Okay" width = 200px>
+            <h2>Completely Okay</h2>
+        </picture>
     </div>
+
+    <div class="container">
+        <div class="range">
+            <div class="range__content">
+
+                <div class="range__slider">
+                    <div class="range__slider-line" id="rangeLine"></div>
+                </div>
+
+                <div class="range__thumb" id="rangeThumb">
+                    <div class="range__value">
+                        <span class="range__number-value" id="rangeNumber">45</span>
+                    </div>
+                </div>
+
+                <input type="range" class="range__input" id="rangeInput" min="0" max="100" value="50" step="1">
+            </div>
+        </div>
+    </div>
+
+    <script src="emotionSlider.js"></script>
+
 </body>
 
 </html>

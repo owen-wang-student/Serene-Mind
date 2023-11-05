@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="j_entry.js"></script>
+    <title>Hello Name</title>
+    <style>
+        .div1 {
+            font: 1000 1rem 'Quicksand', sans-serif; /* font applied to entire container */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+
+        <div class="w3-container w3-center w3-animate-opacity">
+        <br><br><br>
+        Welcome to SereneMind,  <span id="user-Name"></span>. <br> We're so glad you're here. 
+        </div>
+    </h1>
+    
+        <div class="w3-container w3-center w3-animate-opacity">
+            <p>How are you feeling today?</p>
+            <a href="journal.html"> <button>  >  </button> </a>
+        </div>
+    
+    
+
+    <script>
+    
+        const userName = localStorage.getItem('user-Name');
+
+        document.getElementById('user-Name').textContent = userName;
+
+    </script>
+    
+    <!--<h1>Hello, what is your name?</h1>
+    
+    <input id="userName"> <br> <br>
+    <button onclick="myFunction()" type="submit">Save</button>
+
+    <h2 id="message"></h2>-->
+    
+    
+</body>
+
+</html>

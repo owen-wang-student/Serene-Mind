@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="j_entry.js"></script>
+    <title>Hello Name</title>
+</head>
+
+<body>
+    
+    <div>
+        Here is your entry <span id="entry"></span> <br>
+         
+    </div>
+
+    <div>
+        <span id="entry"></span>. <br> 
+    </div>
+    
+    <script>
+        const entryTitle = localStorage.getItem('entry-title');
+        const entry = localStorage.getItem('entry');
+
+        document.getElementById('entry-title').textContent = entryTitle;
+        document.getElementById('entry').textContent = entry;
+
+    </script>
+
+    
+</body>
+
+</html>
